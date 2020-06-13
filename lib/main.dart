@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
-
+import 'package:flutter_svg/svg.dart';
+import 'theme/themes.dart';
 void main() => runApp(App());
 
 class App extends StatefulWidget {
@@ -43,22 +43,29 @@ class AppState extends State<App> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text(                     
+                    Text(
                       "    Meu saldo",
                       style: TextStyle(
                           fontSize: 11,
-                          color: Colors.black,                          
+                          color: Colors.black,
                           fontWeight: FontWeight.w800),
                     ),
                     Text(
                       "R\$ 120,00",
-                      style: TextStyle(fontSize: 16, color: Colors.black, fontWeight: FontWeight.w800),
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w800),
                     ),
                   ],
                 )),
             Spacer(),
             IconButton(
-              icon: Icon(Icons.person_add, color: Colors.green[600], size: 35,),
+              icon: Icon(
+                Icons.person_add,
+                color: Colors.green[600],
+                size: 35,
+              ),
               onPressed: () {
                 print("Hello world");
               },
@@ -73,23 +80,20 @@ class AppState extends State<App> {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: Container(
           padding: EdgeInsets.only(top: 30),
-          height: 75,
-          width: 75,
-          child: new FloatingActionButton(
-            backgroundColor: Color.fromARGB(200, 44, 203, 109),
-            child: Column(
-              children: <Widget>[
-                Icon(Icons.attach_money, size: 23),
-                Text(
-                  "Pagar",
-                  style: TextStyle(
-                    fontSize: 8,
-                  ),
-                )
-              ],
-            ),
-            onPressed: () {},
-          ),
+           height: 50,
+           width: 60,
+           child: new FloatingActionButton(
+              backgroundColor: themeData.canvasColor,
+              onPressed: () {},
+              child: Container(
+                  child: ConstrainedBox(
+                      constraints: BoxConstraints.expand(),
+                      child: FlatButton(
+                          onPressed: null,
+                          padding: EdgeInsets.all(0.0),
+                          child: SvgPicture.asset('assets/icons/awesome-road.svg'),),),)
+
+              ),
         ),
 
         bottomNavigationBar: BottomAppBar(
@@ -110,11 +114,11 @@ class AppState extends State<App> {
                           Icon(
                             Icons.home,
                             size: 30,
-                            color: Colors.black,
+                            color: themeData.primaryColor,
                           ),
                           Text(
                             "Início",
-                            style: TextStyle(fontSize: 8),
+                            style: themeData.textTheme.bodyText1,
                           )
                         ],
                       )),
@@ -127,14 +131,21 @@ class AppState extends State<App> {
                       },
                       child: Column(
                         children: <Widget>[
-                          Icon(
-                            Icons.account_balance_wallet,
-                            size: 30,
-                            color: Colors.grey[500],
+                          Container(
+                            width: 40,
+                            height: 30,
+                         
+                            child:SvgPicture.asset(
+                            'assets/icons/Explore.svg',
+                           color: themeData.primaryColor,
                           ),
+                           
+                          
+                          ),
+                      
                           Text(
-                            "Carteira",
-                            style: TextStyle(fontSize: 8),
+                            "Serviços",
+                            style: themeData.textTheme.bodyText1,
                           )
                         ],
                       )),
@@ -150,11 +161,16 @@ class AppState extends State<App> {
                       },
                       child: Column(
                         children: <Widget>[
-                          Icon(Icons.notifications_none,
-                              size: 30, color: Colors.grey[500]),
+                           Container(
+                            width: 40,
+                            height: 30,
+                             child:SvgPicture.asset(
+                            'assets/icons/Icon awesome-bell.svg',
+                           color: themeData.primaryColor,
+                          ),),
                           Text(
                             "Notificações",
-                            style: TextStyle(fontSize: 8),
+                            style: themeData.textTheme.bodyText1,
                           )
                         ],
                       )),
@@ -168,9 +184,9 @@ class AppState extends State<App> {
                       child: Column(
                         children: <Widget>[
                           Icon(
-                            Icons.person_outline,
+                            Icons.settings,
                             size: 30,
-                            color: Colors.grey[500],
+                            color: themeData.primaryColor,
                           ),
                           Text(
                             "Ajustes",
@@ -194,84 +210,119 @@ class RecentPayments extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Color.fromARGB(255, 241, 241, 241),
-      child: Column(        
-        children: <Widget>[          
+      child: Column(
+        children: <Widget>[
           Container(
             height: 120,
-            color: Color.fromARGB(255, 25, 203, 120),
+            color: themeData.primaryColor,
             width: MediaQuery.of(context).size.width,
             child: Container(
-              margin: EdgeInsets.only(top: 10, left: 15) ,
+              margin: EdgeInsets.only(top: 10, left: 15),
               child: Column(
                 children: <Widget>[
                   Container(
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.only(bottom: 10),
-                    child: Text("Sugestões para você", style: TextStyle( fontWeight: FontWeight.w800, fontSize: 14, color: Colors.white, ),),
+                    child: Text(
+                      "Sugestões para você",
+                      style: TextStyle(
+                        fontWeight: FontWeight.w800,
+                        fontSize: 14,
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
-                  Row(                    
+                  Row(
                     children: <Widget>[
                       Column(
                         children: <Widget>[
                           Container(
-                              width: 60.0,
-                              height: 60.0,
-                              decoration: BoxDecoration(
-                                  border: Border.all(width: 2, color: Colors.white),
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
+                            width: 60.0,
+                            height: 60.0,
+                            decoration: BoxDecoration(
+                                border:
+                                    Border.all(width: 2, color: Colors.white),
+                                shape: BoxShape.circle,
+                                image: DecorationImage(
                                   fit: BoxFit.fill,
-                                  image: NetworkImage( "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Grupo_CCR.svg/1200px-Grupo_CCR.svg.png",),)
-                          ),),
-                          Text("@CCR", style: TextStyle(color: Colors.white),),
+                                  image: NetworkImage(
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Grupo_CCR.svg/1200px-Grupo_CCR.svg.png",
+                                  ),
+                                )),
+                          ),
+                          Text(
+                            "@CCR",
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ],
                       ),
                       Spacer(),
                       Column(
                         children: <Widget>[
                           Container(
-                              width: 60.0,
-                              height: 60.0,
-                              decoration: BoxDecoration(
-                                  border: Border.all(width: 2, color: Colors.white),
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
+                            width: 60.0,
+                            height: 60.0,
+                            decoration: BoxDecoration(
+                                border:
+                                    Border.all(width: 2, color: Colors.white),
+                                shape: BoxShape.circle,
+                                image: DecorationImage(
                                   fit: BoxFit.fill,
-                                  image: NetworkImage( "https://www.picpay.com/static/images/new/home/ppay-icon.png",),)
-                          ),),
-                          Text("@thiago.s", style: TextStyle(color: Colors.white),),
+                                  image: NetworkImage(
+                                    "https://www.picpay.com/static/images/new/home/ppay-icon.png",
+                                  ),
+                                )),
+                          ),
+                          Text(
+                            "@thiago.s",
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ],
                       ),
                       Spacer(),
                       Column(
                         children: <Widget>[
                           Container(
-                              width: 60.0,
-                              height: 60.0,
-                              decoration: BoxDecoration(
-                                  border: Border.all(width: 2, color: Colors.white),
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
+                            width: 60.0,
+                            height: 60.0,
+                            decoration: BoxDecoration(
+                                border:
+                                    Border.all(width: 2, color: Colors.white),
+                                shape: BoxShape.circle,
+                                image: DecorationImage(
                                   fit: BoxFit.fill,
-                                  image: NetworkImage( "https://www.picpay.com/static/images/new/home/ppay-icon.png",),)
-                          ),),
-                          Text("@heymarina", style: TextStyle(color: Colors.white),),
+                                  image: NetworkImage(
+                                    "https://www.picpay.com/static/images/new/home/ppay-icon.png",
+                                  ),
+                                )),
+                          ),
+                          Text(
+                            "@heymarina",
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ],
                       ),
                       Spacer(),
                       Column(
                         children: <Widget>[
                           Container(
-                              width: 60.0,
-                              height: 60.0,
-                              decoration: BoxDecoration(
-                                  border: Border.all(width: 2, color: Colors.white),
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
+                            width: 60.0,
+                            height: 60.0,
+                            decoration: BoxDecoration(
+                                border:
+                                    Border.all(width: 2, color: Colors.white),
+                                shape: BoxShape.circle,
+                                image: DecorationImage(
                                   fit: BoxFit.fill,
-                                  image: NetworkImage( "https://www.picpay.com/static/images/new/home/ppay-icon.png",),)
-                          ),),
-                          Text("Cielo", style: TextStyle(color: Colors.white),),
+                                  image: NetworkImage(
+                                    "https://www.picpay.com/static/images/new/home/ppay-icon.png",
+                                  ),
+                                )),
+                          ),
+                          Text(
+                            "Cielo",
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ],
                       ),
                     ],
@@ -281,27 +332,37 @@ class RecentPayments extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: 10) ,
-            child: Container(               
+            margin: EdgeInsets.only(top: 10),
+            child: Container(
               padding: EdgeInsets.only(left: 10, right: 10, top: 10),
               width: MediaQuery.of(context).size.width,
               height: 30,
               child: Row(
                 children: <Widget>[
-                  Text("Atividades", style: TextStyle(fontWeight: FontWeight.w800,),),
+                  Text(
+                    "Atividades",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
                   Spacer(),
                   Container(
                     width: 60,
-                    child: Text( "Todas", style: TextStyle(fontSize: 14, 
-                                          color: Color.fromARGB(255, 44, 207, 131),
-                                          fontWeight: FontWeight.w800),),
+                    child: Text(
+                      "Todas",
+                      style: TextStyle(
+                          fontSize: 14,
+                          color: Color.fromARGB(255, 44, 207, 131),
+                          fontWeight: FontWeight.w800),
+                    ),
                   ),
                   Container(
                     width: 50,
-                    child: Text( "Minhas", style: TextStyle(
-                                                    fontSize: 14,
-                                                    color: Color.fromARGB(255, 146, 148, 156),
-                                                    fontWeight: FontWeight.w800)),
+                    child: Text("Minhas",
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Color.fromARGB(255, 146, 148, 156),
+                            fontWeight: FontWeight.w800)),
                   )
                 ],
               ),
@@ -321,17 +382,26 @@ class RecentPayments extends StatelessWidget {
                       Row(
                         children: <Widget>[
                           Container(
-                              width: 45.0,
-                              height: 45.0,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
+                            width: 45.0,
+                            height: 45.0,
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: DecorationImage(
                                   fit: BoxFit.fill,
-                                  image: NetworkImage( "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Grupo_CCR.svg/1200px-Grupo_CCR.svg.png",),)
-                          ),),
-                          Text(" @CCR", style: TextStyle(fontWeight: FontWeight.w800),),
+                                  image: NetworkImage(
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Grupo_CCR.svg/1200px-Grupo_CCR.svg.png",
+                                  ),
+                                )),
+                          ),
+                          Text(
+                            " @CCR",
+                            style: TextStyle(fontWeight: FontWeight.w800),
+                          ),
                           Text(" pagou "),
-                          Text("Você", style: TextStyle(fontWeight: FontWeight.w800),),
+                          Text(
+                            "Você",
+                            style: TextStyle(fontWeight: FontWeight.w800),
+                          ),
                         ],
                       ),
                       Spacer(),
@@ -343,17 +413,32 @@ class RecentPayments extends StatelessWidget {
                       Spacer(),
                       Row(
                         children: <Widget>[
-                          Text("R\$ 10,00", style: TextStyle(color: Color.fromARGB(255, 44, 207, 131), fontWeight: FontWeight.w800),),
+                          Text(
+                            "R\$ 10,00",
+                            style: TextStyle(
+                                color: Color.fromARGB(255, 44, 207, 131),
+                                fontWeight: FontWeight.w800),
+                          ),
                           Text(" | "),
-                          Icon(Icons.people_outline, color: Colors.grey, size: 20,),
-                          Text(" 4 minutos", style: TextStyle(color: Colors.grey),),
+                          Icon(
+                            Icons.people_outline,
+                            color: Colors.grey,
+                            size: 20,
+                          ),
+                          Text(
+                            " 4 minutos",
+                            style: TextStyle(color: Colors.grey),
+                          ),
                           Spacer(),
                           Icon(Icons.chat_bubble_outline),
                           Text("   3   "),
-                          Icon(Icons.favorite, color: Color.fromARGB(255, 44, 207, 131),),
+                          Icon(
+                            Icons.favorite,
+                            color: Color.fromARGB(255, 44, 207, 131),
+                          ),
                           Text("   5   "),
                         ],
-                      ), 
+                      ),
                     ],
                   ),
                 ),
