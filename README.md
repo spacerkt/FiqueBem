@@ -1,10 +1,6 @@
 # Fique_Bem
 
-A new Flutter project.´
-
-This project has been created only for study purposes. Please, if you use this code, refeer this repository for new students.
-
-If you have any question you can ask the author, just send a mail: anribrasil@gmail.com
+A Carteira Digital dos Caminhoneiros
 
 
 ## Getting Started
