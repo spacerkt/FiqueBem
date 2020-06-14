@@ -11,8 +11,8 @@ class AppbarNavigation extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Container(
-            width: 49,
-            height: 49,
+            width: 33,
+            height: 33,
           ),
           SvgPicture.asset(
             "assets/icons/fique_bem.svg",
