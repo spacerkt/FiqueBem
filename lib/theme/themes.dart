@@ -14,11 +14,11 @@ var themeData = ThemeData(
       fontSize: 8,
       color:  Color(0xFF04BFBF),
     ), //header
-    bodyText2:  TextStyle(
-      fontFamily: "Baloo Tamma 2",
-      fontSize: 15,
-      color:  Color(0xFF04BFBF),
-    ), //header
+    bodyText2: TextStyle(
+      fontFamily: 'Poppins',
+      fontSize: 12,
+      color: Color(0xFF767A7A),
+    ), //date
   ),
 );
 
