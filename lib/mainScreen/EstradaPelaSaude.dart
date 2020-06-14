@@ -21,7 +21,6 @@ class ValidatePoints extends StatefulWidget {
 class _ValidatePointsState extends State<ValidatePoints> {
   // int _currentIndex = 0;
   Future<String> _barcodeString;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
