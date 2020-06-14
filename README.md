@@ -1,22 +1,38 @@
-# Fique_Bem
+# Fique Bem
+> Bons hábitos, Boa saúde, Bons caminhos.
 
-A Carteira Digital dos Caminhoneiros
+O aplicativo “Fique Bem” é uma solução que auxilia o caminhoneiro à manter a sua saúde em dia fazendo com que o mesmo adquira hábitos alimentares, solidários e também se preocupe em realizar a manutenção da sua saúde frequentemente. 
+
+O aplicativo tem o propósito de engajar o caminhoneiro a realizar consultas através do programa estrada para a saúde, realizar atos solidários como doação de sangue, incentivar a realização do teste de HIV/Sífilis, além de incentivar bons hábitos alimentares, através da aquisição de pontos que podem ser trocados por serviços de empresas parceiras.
 
 
-## Getting Started
+![](../header.png)
 
-This project is a starting point for a Flutter application.
+## Instalação
 
-A few resources to get you started if this is your first Flutter project:
+Na pasta raiz,Verifique se Seu ambiente está preparado:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```sh
+flutter doctor
+```
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Baixe os Pacotes:
+
+```sh
+ flutter pub get
+```
+Execute o App no Seu Celular ou Emulador:
+
+```sh
+ flutter run
+```
+
 ## Documentation
 
 * [Install Flutter](https://flutter.dev/get-started/)
 * [Flutter documentation](https://flutter.dev/docs)
 * [Development wiki](https://github.com/flutter/flutter/wiki)
+
+
+
+
