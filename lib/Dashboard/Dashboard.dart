@@ -3,10 +3,8 @@ import 'package:Fique_Bem/NotificationScreen/NotificationScreen.dart';
 import 'package:Fique_Bem/StayGood/StayGood.dart';
 import 'package:Fique_Bem/Widgets/AppBar_widget.dart';
 import 'package:Fique_Bem/Widgets/Bottom_navigation_widget.dart';
-import 'package:Fique_Bem/scenes/places/servicesScreen.dart';
 import 'package:Fique_Bem/mainScreen/home.dart';
-import 'package:Fique_Bem/scenes/placesDetails/servicesDetailsScreen.dart';
-import 'package:Fique_Bem/theme/themes.dart';
+import 'package:Fique_Bem/scenes/places/servicesScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -33,7 +31,6 @@ class _DashboardState extends State<Dashboard> {
     StayGoodScreen(),
     NotificationScreen(),
     MenuScreen(),
-    ServicesDetailsScreen()
   ];
 
   @override
