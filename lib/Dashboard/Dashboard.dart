@@ -1,4 +1,5 @@
 import 'package:Fique_Bem/SplashScreen/SplashScreen.dart';
+import 'package:Fique_Bem/StayGood/StayGood.dart';
 import 'package:Fique_Bem/Widgets/AppBar_widget.dart';
 import 'package:Fique_Bem/Widgets/Bottom_navigation_widget.dart';
 import 'package:Fique_Bem/theme/themes.dart';
@@ -13,7 +14,7 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-  int _currentIndex = 0;
+  int _currentIndex = 2;
 
   final List<Widget> _children = [
     Container(
@@ -22,9 +23,7 @@ class _DashboardState extends State<Dashboard> {
     Container(
       child: Text('tela 2'),
     ),
-    Container(
-      child: Text('tela 3'),
-    ),
+    StayGoodScreen(),
     Container(
       child: Text('tela 4'),
     ),
@@ -47,7 +46,11 @@ class _DashboardState extends State<Dashboard> {
           height: 80,
           child: FloatingActionButton(
             backgroundColor: Color(0xFF0C9494),
-            onPressed: () {},
+            onPressed: () => {
+              setState(() {
+                _currentIndex = 2;
+              })
+            },
             child: SvgPicture.asset(
               "assets/icons/logo.svg",
               color: Colors.white,
