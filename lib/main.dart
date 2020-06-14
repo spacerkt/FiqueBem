@@ -89,6 +89,7 @@ class AppState extends State<App> {
                   child: ConstrainedBox(
                       constraints: BoxConstraints.expand(),
                       child: FlatButton(
+                        color: themeData.canvasColor,
                           onPressed: null,
                           padding: EdgeInsets.all(0.0),
                           child: SvgPicture.asset('assets/icons/awesome-road.svg'),),),)
@@ -132,7 +133,7 @@ class AppState extends State<App> {
                       child: Column(
                         children: <Widget>[
                           Container(
-                            width: 40,
+                            width: 20,
                             height: 30,
                          
                             child:SvgPicture.asset(
@@ -162,7 +163,7 @@ class AppState extends State<App> {
                       child: Column(
                         children: <Widget>[
                            Container(
-                            width: 40,
+                            width: 20,
                             height: 30,
                              child:SvgPicture.asset(
                             'assets/icons/Icon awesome-bell.svg',
@@ -340,10 +341,8 @@ class RecentPayments extends StatelessWidget {
               child: Row(
                 children: <Widget>[
                   Text(
-                    "Atividades",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w800,
-                    ),
+                    "Valide seus Pontos",
+                    style: themeData.textTheme.bodyText2
                   ),
                   Spacer(),
                   Container(
