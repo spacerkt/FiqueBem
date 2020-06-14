@@ -1,4 +1,5 @@
 import 'package:Fique_Bem/Form/Form.dart';
+import 'package:Fique_Bem/mainScreen/EstradaPelaSaude.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../theme/themes.dart';
@@ -140,65 +141,74 @@ class Home extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Card(
-                            color: Color(0XFF04BFBF),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              children: <Widget>[
-                                ListTile(
-                                  title: Row(
-                                    children: <Widget>[
-                                      Text(
-                                        "ESTRADA PELA SAÚDE",
-                                        style: themeData.textTheme.subtitle1
-                                            .merge(TextStyle(fontSize: 16)),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Text(
-                                          "10PTS",
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ValidatePoints()),
+                              );
+                            },
+                            child: Card(
+                              color: Color(0XFF04BFBF),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                children: <Widget>[
+                                  ListTile(
+                                    title: Row(
+                                      children: <Widget>[
+                                        Text(
+                                          "ESTRADA PELA SAÚDE",
                                           style: themeData.textTheme.subtitle1
                                               .merge(TextStyle(fontSize: 16)),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text(
+                                            "10PTS",
+                                            style: themeData.textTheme.subtitle1
+                                                .merge(TextStyle(fontSize: 16)),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    subtitle: Padding(
+                                      padding: const EdgeInsets.all(4.0),
+                                      child: Text(
+                                          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                                          style: themeData.textTheme.subtitle2),
+                                    ),
+                                  ),
+                                  Row(
+                                    children: <Widget>[
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            left: 230, bottom: 10),
+                                        child: SvgPicture.asset(
+                                          'assets/icons/Icon material-repeat.svg',
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            left: 10, bottom: 10),
+                                        child: SvgPicture.asset(
+                                          'assets/icons/Icon material-share.svg',
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            left: 10, bottom: 10),
+                                        child: SvgPicture.asset(
+                                          'assets/icons/Icon awesome-heart.svg',
+                                          color: Colors.white,
                                         ),
                                       ),
                                     ],
                                   ),
-                                  subtitle: Padding(
-                                    padding: const EdgeInsets.all(4.0),
-                                    child: Text(
-                                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-                                        style: themeData.textTheme.subtitle2),
-                                  ),
-                                ),
-                                Row(
-                                  children: <Widget>[
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          left: 230, bottom: 10),
-                                      child: SvgPicture.asset(
-                                        'assets/icons/Icon material-repeat.svg',
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          left: 10, bottom: 10),
-                                      child: SvgPicture.asset(
-                                        'assets/icons/Icon material-share.svg',
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          left: 10, bottom: 10),
-                                      child: SvgPicture.asset(
-                                        'assets/icons/Icon awesome-heart.svg',
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                           Card(

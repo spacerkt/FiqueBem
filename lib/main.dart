@@ -1,5 +1,6 @@
 import 'package:Fique_Bem/Dashboard/Dashboard.dart';
 import 'package:Fique_Bem/scenes/places/servicesScreen.dart';
+import 'package:Fique_Bem/scenes/placesDetails/servicesDetailsScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'Form/Form.dart';
@@ -29,6 +30,7 @@ class AppState extends State<App> {
         '/': (context) => SplashScreen(),
         '/home': (context) => Dashboard(),
         '/services': (context) => ServicesScreen(),
+        '/services_details': (context) => ServicesDetailsScreen()
         //'/form': (context) => FormScreen()
       },
     );

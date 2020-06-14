@@ -1,3 +1,4 @@
+import 'package:Fique_Bem/Payment/Payment.dart';
 import 'package:Fique_Bem/Widgets/AppBar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -72,6 +73,7 @@ class _ServicesDetailsState extends State<ServicesDetailsScreen> {
                   Row(
                     children: <Widget>[
                       RatingBar(
+                        onRatingUpdate: (value) {},
                         initialRating: 3,
                         minRating: 1,
                         direction: Axis.horizontal,
@@ -126,10 +128,16 @@ class _ServicesDetailsState extends State<ServicesDetailsScreen> {
                 width: MediaQuery.of(context).size.width,
                 child: RaisedButton(
                   textColor: Colors.white,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => PaymentScreen()),
+                    );
+                  },
                   color: Color(0xFF05AB7C),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5.0),),
+                    borderRadius: BorderRadius.circular(5.0),
+                  ),
                   child: const Text(
                     'USAR PONTOS',
                     style: TextStyle(fontSize: 15),
