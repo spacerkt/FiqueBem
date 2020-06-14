@@ -16,8 +16,18 @@ var themeData = ThemeData(
     ), //header
     bodyText2:  TextStyle(
       fontFamily: "Baloo Tamma 2",
-      fontSize: 15,
+      fontSize: 18,
       color:  Color(0xFF04BFBF),
+    ), //header
+    subtitle1:  TextStyle(
+      fontFamily: "Baloo Tamma 2",
+      fontSize: 20,
+      color:  Color(0xFFFFFFFF),
+    ), //header
+    subtitle2:  TextStyle(
+      fontFamily: "Baloo Tamma 2",
+      fontSize: 10,
+      color:  Color(0xFFFFFFFF),
     ), //header
   ),
 );
