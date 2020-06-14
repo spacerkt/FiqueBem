@@ -1,4 +1,4 @@
-package com.example.picpay_clone;
+package com.example.Fique_Bem;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
