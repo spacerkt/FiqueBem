@@ -23,6 +23,8 @@ dependencies:
   flutter_svg: ^0.17.4
   percent_indicator: ^2.1.4
   fluttertoast: ^4.0.1
+  qrcode_reader: ^0.4.4
+  flutter_rating_bar: ^3.0.1+1
 
 dev_dependencies:
   flutter_test:
@@ -58,7 +60,6 @@ flutter:
     - assets/icons/Icon awesome-heart.svg
     - assets/icons/Icon material-repeat.svg
     - assets/icons/Icon material-share.svg
-    - assets/icons/alimente.svg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
