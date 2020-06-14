@@ -31,6 +31,7 @@ class _DashboardState extends State<Dashboard> {
               child: ConstrainedBox(
                 constraints: BoxConstraints.expand(),
                 child: FlatButton(
+                  color: themeData.canvasColor,
                   onPressed: null,
                   padding: EdgeInsets.all(0.0),
                   child: SvgPicture.asset('assets/icons/awesome-road.svg'),
@@ -75,7 +76,7 @@ class _DashboardState extends State<Dashboard> {
                     child: Column(
                       children: <Widget>[
                         Container(
-                          width: 40,
+                          width: 20,
                           height: 30,
                           child: SvgPicture.asset(
                             'assets/icons/Explore.svg',
@@ -101,7 +102,7 @@ class _DashboardState extends State<Dashboard> {
                     child: Column(
                       children: <Widget>[
                         Container(
-                          width: 40,
+                          width: 20,
                           height: 30,
                           child: SvgPicture.asset(
                             'assets/icons/Icon awesome-bell.svg',
