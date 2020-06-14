@@ -46,6 +46,11 @@ flutter:
     - assets/icons/empty_image_user.jpg
     - assets/icons/goal.png
     - assets/icons/like.svg
+    - assets/icons/share.svg
+    - assets/icons/about.svg
+    - assets/icons/rated.svg
+    - assets/icons/feedback.svg
+    - assets/icons/leave.svg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
