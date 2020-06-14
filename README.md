@@ -9,7 +9,7 @@ O aplicativo tem o propósito de engajar o caminhoneiro a realizar consultas atr
 
 ![](../header.png)
 
-## 🕹️ Instalação
+###  🕹️ | Instalação
 
 Na pasta raiz,Verifique se Seu ambiente está preparado:
 
@@ -28,7 +28,7 @@ Execute o App no Seu Celular ou Emulador:
  flutter run
 ```
 
-## 📚 Documentation
+### 📚 |Documentation
 
 * [Install Flutter](https://flutter.dev/get-started/)
 * [Flutter documentation](https://flutter.dev/docs)
@@ -36,12 +36,12 @@ Execute o App no Seu Celular ou Emulador:
 
 
  
- ### 📱 Tecnologias
+ ###  📱 Tecnologias
 - *[Flutter, Dart](https://flutter.dev/)* 
  
- ## 💪 Time
+ ### 💪 | Time
 - Danilo Nascimento (Dev/UX)  - [LinkedIn](https://www.linkedin.com/in/danilo-nascimento-33071a133/) . [GitHub](https://github.com/daanilo-s19)
 - José Diôgo(Dev) - [LinkedIn](https://www.linkedin.com/in/jozediogo/). [GitHub](https://github.com/juzejunior)
-- Paloma Correia (Dev) - [LinkedIn](https://www.linkedin.com/in/palomaanalistadesistemas) . [GitHub]https://github.com/palomacorreia)
+- Paloma Correia (Dev) - [LinkedIn](https://www.linkedin.com/in/palomaanalistadesistemas) . [GitHub](https://github.com/palomacorreia)
 - Fernando Maia (Business) -  [Linkedin](www.linkedin.com/in/fernando-maia96) 
 
