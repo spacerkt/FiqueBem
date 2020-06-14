@@ -7,6 +7,7 @@ var themeData = ThemeData(
   backgroundColor: Colors.white,
   accentColor: Color(0xFF04BFBF),
   canvasColor: Color(0xFF0C9494),
+  cardColor: Color(0xFF05AB7C),
   appBarTheme: AppBarTheme(elevation: 0),
   textTheme: TextTheme(
     bodyText1: TextStyle(
