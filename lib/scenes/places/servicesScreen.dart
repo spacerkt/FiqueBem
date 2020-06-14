@@ -1,4 +1,4 @@
-import 'package:Fique_Bem/widgets/partner_card_widget.dart';
+import 'package:Fique_Bem/Widgets/stations_widget.dart';
 import 'package:Fique_Bem/widgets/partner_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -23,19 +23,23 @@ class _ServicesScreenState extends State<ServicesScreen> {
       body: DefaultTabController(
         length: 2,
         child: Scaffold(
-          appBar: AppBar(
-            bottom: TabBar(
+          appBar: PreferredSize(
+            preferredSize: Size.fromHeight(kToolbarHeight),
+            child: Container(
+              color: Color(0xFF80cbc4),
+              child: TabBar(
+              indicatorColor: Color(0xFF0C9494),
               tabs: [
                 Tab(text: "Parceiros"),
                 Tab(text: "Postos"),
               ],
             ),
-            title: Text("Serviços"),
+            )
           ),
           body: TabBarView(
             children: [
-              PartnerCardWidget(),
-              Icon(Icons.directions_transit),
+              PartnerWidget(),
+              StationsWidget(),
             ],
           ),
         ),

@@ -2,17 +2,14 @@ import 'package:Fique_Bem/Widgets/partner_card_widget.dart';
 import 'package:Fique_Bem/models/Partner.dart';
 import 'package:flutter/material.dart';
 
-class PartnerWidget extends StatelessWidget {
+class StationsWidget extends StatelessWidget {
   List<Partner> nearPartners = List();
 
   void initPartnerList() {
     nearPartners
-        .add(Partner("OFICINA DO FERNANDÃO", "Serviços Automotivos", "3,4"));
+        .add(Partner("POSTO DO MARCOS", "Chuveiro, Dormitório", "3,5"));
     nearPartners
-        .add(Partner("ALMOÇO DA NEIDE", "PF, lombinho e muito mais", "4,1"));
-    nearPartners.add(Partner("Posto Ipiraba", "Farmácias e CIA", "4,5"));
-    nearPartners
-        .add(Partner("Supermercado do Kaio", "Horta e Padaria", "5,0"));
+        .add(Partner("POSTO DO CARLOS", "Refeição e Dormitório", "10,1"));
   }
 
   @override
