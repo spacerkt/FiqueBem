@@ -22,6 +22,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   flutter_svg: ^0.17.4
   percent_indicator: ^2.1.4
+  fluttertoast: ^4.0.1
   qrcode_reader: ^0.4.4
   flutter_rating_bar: ^3.0.1+1
 
@@ -42,7 +43,6 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/icons/awesome-road.svg
-    - assets/icons/qr-code.svg
     - assets/icons/Explore.svg
     - assets/icons/Icon awesome-bell.svg
     - assets/icons/logo.svg
