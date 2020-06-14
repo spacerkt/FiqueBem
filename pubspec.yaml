@@ -45,15 +45,9 @@ flutter:
    - assets/icons/Icon awesome-heart.svg
    - assets/icons/Icon material-repeat.svg
    - assets/icons/Icon material-share.svg
-
-   
-
-    - assets/icons/awesome-road.svg
-    - assets/icons/Explore.svg
-    - assets/icons/Icon awesome-bell.svg
-    - assets/icons/logo.svg
-    - assets/icons/fique_bem.svg
-    - assets/icons/empty_image_user.jpg
+   - assets/icons/logo.svg
+   - assets/icons/fique_bem.svg
+   - assets/icons/empty_image_user.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
