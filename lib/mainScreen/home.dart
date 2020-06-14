@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
                             children: <Widget>[
                               Padding(
                                 padding:
-                                const EdgeInsets.only(left: 10, top: 5),
+                                    const EdgeInsets.only(left: 10, top: 5),
                                 child: Column(
                                   children: <Widget>[
                                     Row(
@@ -60,7 +60,7 @@ class Home extends StatelessWidget {
                                                 TextStyle(
                                                     fontSize: 15,
                                                     fontWeight:
-                                                    FontWeight.w800),
+                                                        FontWeight.w800),
                                               ),
                                             ),
                                           ),
@@ -72,7 +72,7 @@ class Home extends StatelessWidget {
                               ),
                               Padding(
                                 padding:
-                                const EdgeInsets.only(left: 5, top: 100),
+                                    const EdgeInsets.only(left: 5, top: 100),
                                 child: Text("Meta atual: 200 pts",
                                     style: themeData.textTheme.subtitle1
                                         .merge(TextStyle(fontSize: 12))),
@@ -125,7 +125,7 @@ class Home extends StatelessWidget {
                 children: <Widget>[
                   Padding(
                     padding:
-                    const EdgeInsets.only(top: 20, left: 20, right: 20),
+                        const EdgeInsets.only(top: 20, left: 20, right: 20),
                     child: Center(
                       child: Column(
                         children: <Widget>[
@@ -165,7 +165,7 @@ class Home extends StatelessWidget {
                                   subtitle: Padding(
                                     padding: const EdgeInsets.all(4.0),
                                     child: Text(
-                                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+                                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
                                         style: themeData.textTheme.subtitle2),
                                   ),
                                 ),
@@ -226,7 +226,7 @@ class Home extends StatelessWidget {
                                   subtitle: Padding(
                                     padding: const EdgeInsets.all(4.0),
                                     child: Text(
-                                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+                                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
                                         style: themeData.textTheme.subtitle2),
                                   ),
                                 ),
@@ -270,14 +270,14 @@ class Home extends StatelessWidget {
                                   title: Row(
                                     children: <Widget>[
                                       Text(
-                                        "ESTRADA PELA SAÚDE",
+                                        "FIQUE SABENDO",
                                         style: themeData.textTheme.subtitle1
                                             .merge(TextStyle(fontSize: 16)),
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.all(8.0),
                                         child: Text(
-                                          "10PTS",
+                                          "1PTS",
                                           style: themeData.textTheme.subtitle1
                                               .merge(TextStyle(fontSize: 16)),
                                         ),
@@ -287,7 +287,7 @@ class Home extends StatelessWidget {
                                   subtitle: Padding(
                                     padding: const EdgeInsets.all(4.0),
                                     child: Text(
-                                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+                                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
                                         style: themeData.textTheme.subtitle2),
                                   ),
                                 ),
@@ -356,72 +356,11 @@ class Home extends StatelessWidget {
                                     ],
                                   ),
                                   subtitle: Padding(
-                                    padding: const EdgeInsets.all(4.0),
-                                    child: Text(
-                                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-                                        style: themeData.textTheme.subtitle2),
-                                  ),
-                                ),
-                                Row(
-                                  children: <Widget>[
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          left: 230, bottom: 10),
-                                      child: SvgPicture.asset(
-                                        'assets/icons/Icon material-repeat.svg',
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          left: 10, bottom: 10),
-                                      child: SvgPicture.asset(
-                                        'assets/icons/Icon material-share.svg',
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          left: 10, bottom: 10),
-                                      child: SvgPicture.asset(
-                                        'assets/icons/Icon awesome-heart.svg',
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            color: themeData.cardColor,
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              children: <Widget>[
-                                ListTile(
-                                  title: Row(
-                                    children: <Widget>[
-                                      Text(
-                                        "FORMULÁRIO DE TRIAGEM:",
-                                        style: themeData.textTheme.subtitle1
-                                            .merge(TextStyle(fontSize: 16)),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Text(
-                                          "3PTS",
-                                          style: themeData.textTheme.subtitle1
-                                              .merge(TextStyle(fontSize: 16)),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  subtitle: Padding(
-                                    padding: const EdgeInsets.all(4.0),
-                                    child: Text(
-                                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-                                        style: themeData.textTheme.subtitle2),
-                                  ),
+                                      padding: const EdgeInsets.all(4.0),
+                                      child: Text(
+                                          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                                          style:
+                                              themeData.textTheme.subtitle2)),
                                 ),
                                 Row(
                                   children: <Widget>[
@@ -478,11 +417,11 @@ class Home extends StatelessWidget {
                                     ],
                                   ),
                                   subtitle: Padding(
-                                    padding: const EdgeInsets.all(4.0),
-                                    child: Text(
-                                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-                                        style: themeData.textTheme.subtitle2),
-                                  ),
+                                      padding: const EdgeInsets.all(4.0),
+                                      child: Text(
+                                          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                                          style:
+                                              themeData.textTheme.subtitle2)),
                                 ),
                                 Row(
                                   children: <Widget>[
@@ -542,7 +481,7 @@ class Home extends StatelessWidget {
                                         ),
                                         Padding(
                                           padding:
-                                          const EdgeInsets.only(left: 100),
+                                              const EdgeInsets.only(left: 100),
                                           child: Text(
                                             "ALIMENTAÇÃO DO DIA:",
                                             style: themeData.textTheme.subtitle1
@@ -556,10 +495,10 @@ class Home extends StatelessWidget {
                                     children: <Widget>[
                                       Padding(
                                         padding:
-                                        const EdgeInsets.only(left: 4.0),
+                                            const EdgeInsets.only(left: 4.0),
                                         child: Text("dia 24/03/2020",
                                             style:
-                                            themeData.textTheme.subtitle2),
+                                                themeData.textTheme.subtitle2),
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(
