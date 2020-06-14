@@ -39,21 +39,27 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-   - assets/icons/awesome-road.svg
-   - assets/icons/Explore.svg
-   - assets/icons/Icon awesome-bell.svg
-   - assets/icons/Icon awesome-heart.svg
-   - assets/icons/Icon material-repeat.svg
-   - assets/icons/Icon material-share.svg
-   - assets/icons/logo.svg
-   - assets/icons/fique_bem.svg
-   - assets/icons/empty_image_user.jpg
+    - assets/icons/awesome-road.svg
+    - assets/icons/Explore.svg
+    - assets/icons/Icon awesome-bell.svg
+    - assets/icons/logo.svg
+    - assets/icons/fique_bem.svg
+    - assets/icons/empty_image_user.jpg
+    - assets/icons/goal.png
+    - assets/icons/like.svg
+    - assets/icons/share.svg
+    - assets/icons/about.svg
+    - assets/icons/rated.svg
+    - assets/icons/feedback.svg
+    - assets/icons/leave.svg
+    - assets/icons/Icon awesome-bell.svg
+    - assets/icons/Icon awesome-heart.svg
+    - assets/icons/Icon material-repeat.svg
+    - assets/icons/Icon material-share.svg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
-
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
-
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a

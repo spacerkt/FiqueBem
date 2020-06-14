@@ -1,4 +1,6 @@
-import 'package:Fique_Bem/SplashScreen/SplashScreen.dart';
+import 'package:Fique_Bem/Menu/Menu.dart';
+import 'package:Fique_Bem/NotificationScreen/NotificationScreen.dart';
+import 'package:Fique_Bem/StayGood/StayGood.dart';
 import 'package:Fique_Bem/Widgets/AppBar_widget.dart';
 import 'package:Fique_Bem/Widgets/Bottom_navigation_widget.dart';
 import 'package:Fique_Bem/mainScreen/home.dart';
@@ -14,24 +16,23 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-  int _currentIndex = 0;
+  int _currentIndex = 2;
+  PageController controllerPageView;
+
+  @override
+  void initState() {
+    super.initState();
+    controllerPageView = PageController(initialPage: _currentIndex);
+  }
 
   final List<Widget> _children = [
-    Container(
-      child: Home(),
-    ),
+    Home(),
     Container(
       child: Text('tela 2'),
     ),
-    Container(
-      child: Text('tela 3'),
-    ),
-    Container(
-      child: Text('tela 4'),
-    ),
-    Container(
-      child: Text('tela 5'),
-    ),
+    StayGoodScreen(),
+    NotificationScreen(),
+    MenuScreen(),
   ];
 
   @override
@@ -39,7 +40,15 @@ class _DashboardState extends State<Dashboard> {
     return Scaffold(
         appBar: AppBar(
             backgroundColor: Color(0xFF04BFBF), title: AppbarNavigation()),
-        body: _children[_currentIndex],
+        body: PageView(
+          controller: controllerPageView,
+          onPageChanged: (value) {
+            setState(() {
+              _currentIndex = value;
+            });
+          },
+          children: _children,
+        ),
 
         // Bottom
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -47,8 +56,11 @@ class _DashboardState extends State<Dashboard> {
           width: 80,
           height: 80,
           child: FloatingActionButton(
-            backgroundColor: Color(0xFF0C9494),
-            onPressed: () {},
+            backgroundColor:
+                _currentIndex == 2 ? Color(0xFF0C9494) : Color(0xFF04BFBF),
+            onPressed: () => setState(() {
+              controllerPageView.jumpToPage(2);
+            }),
             child: SvgPicture.asset(
               "assets/icons/logo.svg",
               color: Colors.white,
@@ -63,7 +75,7 @@ class _DashboardState extends State<Dashboard> {
 
   void handleIndexBottom(int index) {
     setState(() {
-      _currentIndex = index;
+      controllerPageView.jumpToPage(index);
     });
   }
 }
