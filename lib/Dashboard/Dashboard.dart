@@ -1,6 +1,7 @@
 import 'package:Fique_Bem/SplashScreen/SplashScreen.dart';
 import 'package:Fique_Bem/Widgets/AppBar_widget.dart';
 import 'package:Fique_Bem/Widgets/Bottom_navigation_widget.dart';
+import 'package:Fique_Bem/scenes/places/servicesScreen.dart';
 import 'package:Fique_Bem/theme/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -20,7 +21,7 @@ class _DashboardState extends State<Dashboard> {
       child: Text('tela 1'),
     ),
     Container(
-      child: Text('tela 2'),
+      child: ServicesScreen(),
     ),
     Container(
       child: Text('tela 3'),
