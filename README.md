@@ -1,5 +1,6 @@
 # Fique Bem
 > Bons hábitos, Boa saúde, Bons caminhos.
+![FIQUEBEM](https://user-images.githubusercontent.com/21202738/84603742-22630280-ae67-11ea-8b4e-e1f79959214c.gif)
 
 O aplicativo “Fique Bem” é uma solução que auxilia o caminhoneiro à manter a sua saúde em dia fazendo com que o mesmo adquira hábitos alimentares, solidários e também se preocupe em realizar a manutenção da sua saúde frequentemente. 
 
