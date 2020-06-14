@@ -362,7 +362,7 @@ class _StayGoodScreenState extends State<StayGoodScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        "Verifique a sua pressão +5pt",
+                        "Verique a sua Glicemia",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 12,
@@ -415,7 +415,7 @@ class _StayGoodScreenState extends State<StayGoodScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        "Verifique a sua pressão +5pt",
+                        "Verifique o seu colesterol",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 12,
@@ -534,7 +534,7 @@ class _StayGoodScreenState extends State<StayGoodScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        "Verifique a sua pressão +5pt",
+                        "Verificação de Sorologias",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 12,
@@ -587,113 +587,7 @@ class _StayGoodScreenState extends State<StayGoodScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        "Verifique a sua pressão +5pt",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500),
-                      ),
-                      Text(
-                        "última verificação: 03/03/2019",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 8,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: <Widget>[
-                      Padding(
-                        padding: EdgeInsets.only(right: 13),
-                        child: Icon(
-                          Icons.share,
-                          color: Colors.white,
-                          size: 15,
-                        ),
-                      ),
-                      SvgPicture.asset(
-                        "assets/icons/like.svg",
-                        color: Colors.white,
-                        width: 13,
-                        height: 11,
-                      ),
-                    ],
-                  )
-                ],
-              ),
-            ),
-            Container(
-              width: 329,
-              height: 48,
-              padding: EdgeInsets.fromLTRB(14, 12, 14, 12),
-              margin: EdgeInsets.only(top: 10),
-              decoration: BoxDecoration(
-                color: Color(0xFF05AB7C).withOpacity(0.65),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        "Verifique a sua pressão +5pt",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500),
-                      ),
-                      Text(
-                        "última verificação: 03/03/2019",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 8,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: <Widget>[
-                      Padding(
-                        padding: EdgeInsets.only(right: 13),
-                        child: Icon(
-                          Icons.share,
-                          color: Colors.white,
-                          size: 15,
-                        ),
-                      ),
-                      SvgPicture.asset(
-                        "assets/icons/like.svg",
-                        color: Colors.white,
-                        width: 13,
-                        height: 11,
-                      ),
-                    ],
-                  )
-                ],
-              ),
-            ),
-            Container(
-              width: 329,
-              height: 48,
-              padding: EdgeInsets.fromLTRB(14, 12, 14, 12),
-              margin: EdgeInsets.only(top: 10),
-              decoration: BoxDecoration(
-                color: Color(0xFF05AB7C).withOpacity(0.65),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        "Verifique a sua pressão +5pt",
+                        "Verificação de proteína C reativa",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 12,

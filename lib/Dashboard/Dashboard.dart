@@ -1,6 +1,5 @@
 import 'package:Fique_Bem/Menu/Menu.dart';
 import 'package:Fique_Bem/NotificationScreen/NotificationScreen.dart';
-import 'package:Fique_Bem/SplashScreen/SplashScreen.dart';
 import 'package:Fique_Bem/StayGood/StayGood.dart';
 import 'package:Fique_Bem/Widgets/AppBar_widget.dart';
 import 'package:Fique_Bem/Widgets/Bottom_navigation_widget.dart';
