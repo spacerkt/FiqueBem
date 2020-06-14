@@ -24,7 +24,7 @@ class AppState extends State<App> {
   Widget build(BuildContext context) {
     return new MaterialApp(
       home: new Scaffold(
-        body: Dashboard(),
+        body: Home(),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: Container(
           padding: EdgeInsets.only(top: 30),
@@ -151,7 +151,7 @@ class AppState extends State<App> {
   }
 }
 
-class Dashboard extends StatelessWidget {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
