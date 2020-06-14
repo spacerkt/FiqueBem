@@ -3,6 +3,7 @@ import 'package:Fique_Bem/NotificationScreen/NotificationScreen.dart';
 import 'package:Fique_Bem/StayGood/StayGood.dart';
 import 'package:Fique_Bem/Widgets/AppBar_widget.dart';
 import 'package:Fique_Bem/Widgets/Bottom_navigation_widget.dart';
+import 'package:Fique_Bem/mainScreen/home.dart';
 import 'package:Fique_Bem/theme/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -25,9 +26,7 @@ class _DashboardState extends State<Dashboard> {
   }
 
   final List<Widget> _children = [
-    Container(
-      child: Text('tela 1'),
-    ),
+    Home(),
     Container(
       child: Text('tela 2'),
     ),
