@@ -1,10 +1,12 @@
 import 'package:Fique_Bem/Dashboard/Dashboard.dart';
+import 'package:Fique_Bem/scenes/places/servicesScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'SplashScreen/SplashScreen.dart';
 import 'theme/themes.dart';
 
 void main() => runApp(App());
+
 
 class App extends StatefulWidget {
   @override
@@ -14,8 +16,6 @@ class App extends StatefulWidget {
 }
 
 class AppState extends State<App> {
-  // Private variable uses _ before the name
-
   @override
   void initState() {
     super.initState();
@@ -28,6 +28,7 @@ class AppState extends State<App> {
       routes: {
         '/': (context) => SplashScreen(),
         '/home': (context) => Dashboard(),
+        '/services': (context) => ServicesScreen()
       },
     );
   }
